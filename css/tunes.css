@@ -1,0 +1,585 @@
+/* Start Global Rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+.tunes {
+    background-image: url(../images/hero_image.png);
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.tunes .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89px;
+}
+
+@media (max-width: 767px) {
+    .tunes .container {
+        flex-wrap: wrap;
+    }
+}
+
+.tunes .container p {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+@media (max-width: 767px) {
+    .tunes .container p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 26px;
+        margin-top: 20px;
+    }
+}
+
+.tunes .container ul {
+    list-style: none;
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .tunes .container ul {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.tunes .container ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    display: block;
+    margin-right: 25px;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+    .tunes .container ul li:last-child a {
+        min-width: 70.4px;
+    }
+}
+
+.tunes .container ul li a div {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    z-index: -1;
+    opacity: 0;
+}
+
+.tunes .container ul li a:hover div {
+    z-index: 10;
+    opacity: 1;
+}
+
+.tunes .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .tunes .text {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.tunes .text p:first-child {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 767px) {
+    .tunes .text p:first-child {
+        max-width: 100%;
+    }
+}
+
+.tunes .text p:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .tunes .text p:nth-child(2) {
+        width: 772px;
+    }
+}
+
+.tunes .text p:last-child {
+    width: 1180px;
+    font-weight: 300;
+}
+
+@media (max-width: 767px) {
+    .tunes .text p:last-child {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .tunes .text p:last-child {
+        width: 770px;
+    }
+}
+
+.tunes > a {
+    color: white;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music {
+    background-color: #281154;
+    color: white;
+    padding-top: 60px;
+}
+
+@media (max-width: 991px) {
+    .music {
+        padding-bottom: 60px;
+    }
+}
+
+.music > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.music > div:first-child p,
+.music > div:first-child i {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.music > div:first-child i {
+    margin-right: 7px;
+}
+
+.music .container p {
+    width: 1151px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    .music .container p {
+        width: fit-content;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .music .container p {
+        width: 742px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .music .container p {
+        width: 976px;
+    }
+}
+
+.music button {
+    display: block;
+    margin: 31px auto;
+    background: #dc0000;
+    padding: 12px 14px;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.music button:hover {
+    background-color: #b80311;
+}
+
+.music > p:last-of-type {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 29px;
+}
+
+@media (max-width: 767px) {
+    .music > p:last-of-type {
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.music div:last-child {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 918px;
+    bottom: -360px;
+    margin-top: -360px;
+}
+
+@media (max-width: 991px) {
+    .music div:last-child {
+        display: none;
+    }
+}
+
+.movie {
+    margin-top: 440px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .movie {
+        margin-top: 50px;
+    }
+}
+
+.movie .text > p {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+    .movie .text > p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.movie .text .container p {
+    width: 1175px;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+    .movie .text .container p {
+        width: fit-content;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .movie .text .container p {
+        width: 760px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .movie .text .container p {
+        width: 994px;
+    }
+}
+
+.movie .text button {
+    width: 104px;
+    height: 41px;
+    background-color: #270082;
+    color: white;
+    margin-bottom: 37px;
+}
+
+.movie .text button:hover {
+    background-color: #52339b;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .movie .image {
+        width: 932px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .movie .image img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.party {
+    background-image: url(../images/video.png);
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.party .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .party .text {
+        max-width: 100%;
+    }
+}
+
+.party .text p {
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .party .text p {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.party > .text > p {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 27px;
+}
+
+.party > .text .container p {
+    font-weight: 300;
+    line-height: 1.4;
+    width: 1176px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .party > .text .container p {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .party > .text .container p {
+        width: 953px;
+    }
+}
+
+.card {
+    margin-bottom: 90px;
+}
+
+.card .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .card .container {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card .container {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        column-gap: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .card .container .image {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 991px) {
+    .card .container .image img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .card .container .text {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card .container .text {
+        margin-left: -70px;
+    }
+}
+
+.card .container .text p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.card .container .text p:nth-child(2) {
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    width: 675px;
+}
+
+@media (max-width: 767px) {
+    .card .container .text p:nth-child(2) {
+        width: fit-content;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card .container .text p:nth-child(2) {
+        width: 770px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card .container .text p:nth-child(2) {
+        width: 478px;
+    }
+}
+
+.card .container .text p:last-of-type {
+    font-weight: 300;
+    margin-bottom: 22px;
+    border-bottom: 1px solid black;
+    padding-bottom: 17px;
+
+}
+
+.card .container .text button {
+    width: 84px;
+    height: 39px;
+    background: #270082;
+    color: white;
+}
+
+.card .container .text button:hover {
+   background-color: #52339b;
+}
+
+.menus {
+    background-color: #1b0058;
+    padding: 30px 0;
+}
+
+.menus .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    color: white;
+    font-weight: 300;
+}
+
+@media (max-width: 1199px) {
+    .menus .container .menu {
+        margin-bottom: 28px;
+    }
+}
+
+.menus .container .menu > p {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 11px;
+    margin-bottom: 15px;
+}
+
+.menus .container .menu:first-child > p {
+    width: 96px;
+}
+
+.menus .container .menu:nth-child(2) > p {
+    width: 115px;
+}
+
+.menus .container .menu:nth-child(3) > p {
+    width: 154px;
+}
+
+.menus .container .menu:nth-child(4) > p {
+    width: 127px;
+}
+
+.menus .container .menu div {
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.menus .container .menu div i {
+    margin-right: 6px;
+}
+
+footer {
+    background-color: #270082;
+    padding: 23px 0;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
