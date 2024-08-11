@@ -83,8 +83,9 @@ body {
 
 @media (max-width: 767px) {
     .tunes .container ul {
-        width: 100%;
-        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 289px;
     }
 }
 
@@ -550,6 +551,7 @@ body {
 
 .menus .container .menu:first-child > p {
     width: 96px;
+    min-width: 96px;
 }
 
 .menus .container .menu:nth-child(2) > p {
@@ -558,6 +560,7 @@ body {
 
 .menus .container .menu:nth-child(3) > p {
     width: 154px;
+    min-width: 154px;
 }
 
 .menus .container .menu:nth-child(4) > p {
